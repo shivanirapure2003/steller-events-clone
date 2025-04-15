@@ -35,17 +35,18 @@
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.6);
   }
-  
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: auto;
+    
   }
   
   .logo img {
-    width: 80px;
+    width: 140px;
   }
   /* Navigation */
   .nav {
@@ -74,14 +75,14 @@
     bottom: -3px;
     width: 0%;
     height: 2px;
-    background-color: #FFD700;
+    background-color: #1fe2ff;
     transition: width 0.3s ease-in-out;
   }
   .nav-links li a:hover::after {
     width: 100%;
   }
   .nav-links li a:hover {
-    color: #FFD700;
+    color: #1fe2ff;
   }
   
   /* Hamburger */
@@ -206,6 +207,7 @@
   
   .promise-img {
     flex: 1 1 400px;
+    margin-top: 20px;
   }
   .promise-img img {
     width: 100%;
@@ -219,8 +221,9 @@
   .promise-text h2 {
     font-size: 40px;
     color: #fff;
-    margin-bottom: 20px;
+    text-align: center;
     text-shadow: 1px 1px 2px #070808;
+    margin-left: 40px;
   }
   .promise-text p {
     font-size: 16px;
@@ -250,10 +253,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-  margin:0;
+  margin:0 0 0 60px;
   }
   .stats div {
-    text-align: center;
     flex: 1;
   }
   .stats span {
@@ -372,7 +374,7 @@
 
   .moments-text h2 {
     font-size: 2.2rem;
-  }
+    text-align: center; }
 
   .moments-text p {
     font-size: 1rem;
@@ -403,7 +405,7 @@
 
 .service-item {
   position: relative;
-  height: 410px;
+  height: 500px;
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -454,7 +456,7 @@
 
 .we-are-here-content {
   max-width: 600px;
-  background-color: rgba(0, 0, 0, 0.5); /* Slight overlay for readability */
+  background-color: rgba(0, 0, 0, 0.3); /* Slight overlay for readability */
   padding: 40px;
   border-radius: 10px;
 }
@@ -467,7 +469,7 @@
 }
 
 .we-are-here-content h1 span {
-  color: #ff1f1f; /* Red "24/7" */
+  color: #1fe2ff; /* Red "24/7" */
 }
 
 .we-are-here-content p {
@@ -477,7 +479,7 @@
 }
 
 .contact-btn {
-  background-color: #e00000;
+  background-color: #1fe2ff;
   color: white;
   padding: 12px 24px;
   border-radius: 6px;
@@ -601,4 +603,88 @@
 .footer-social a:hover {
   background: #00bcd4;
   color: #fff;
+}
+/* for gallery */
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.we-are-here-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+.contact-form-box {
+  flex: 1 1 500px;
+  background-color: rgba(0, 0, 0, 0.3); /* Same style as left box */
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+}
+
+.contact-form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  color: #000;
+}
+
+.contact-form-box button {
+  align-self: flex-start;
+}
+
+/* Mobile Support */
+@media (max-width: 768px) {
+  .we-are-here-wrapper {
+    flex-direction: column;
+  }
 }

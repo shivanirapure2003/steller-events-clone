@@ -14,15 +14,15 @@
   <header class="header">
     <div class="container">
       <a href="./index.html" class="logo">
-        <img src="./img/logonew.png" alt="Steller Logo" />
+        <img src="./img/logonew2.png" alt="Steller Logo" />
       </a>
       <nav class="nav" id="nav-menu">
         <ul class="nav-links">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="./index.html#services">Our Services</a></li>
+          <li><a href="./index.html#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="hamburger" id="hamburger">
@@ -58,12 +58,13 @@
             <p>Love Stories<br>Curated</p>
           </div>
           <div>
-            <h3>Pan-India</h3>
-            <p>100% Drama-Free<br>Planning</p>
+            <h3>100%</h3>
+            <p> Hassle-Free<br>Planning</p>
             
           </div>
           <div>
-            <p>+ Destination<br>Expertise</p>
+            <h3>Pan-Asia</h3>
+            <p>Destination<br>Expertise</p>
           </div>
         </div>
       </div>
@@ -81,8 +82,8 @@
           corporate events, and more. From concept to execution, we bring your dream event to life with passion, creativity,
           and precision.</p>
           <div class="event-stats">
-            <div><span>77</span><p>Completed Projects</p></div>
-            <div><span>92</span><p>Satisfied Clients</p></div>
+            <div><span>500+</span><p>Completed Projects</p></div>
+            <div><span>500+</span><p>Satisfied Clients</p></div>
             <div><span>84</span><p>Resolved Tickets</p></div>
           </div>
 
@@ -115,49 +116,70 @@
     </div>
   </div>
 </section>
-<section class="our-service">
+<section class="our-service" id="services">
   <h2>OUR SERVICE</h2>
 </section>
 <section class="service-grid">
-  <a href="service1.html" class="service-item" style="background-image: url('img/wedding-service-event1.jpg');">
+  <a href="#" class="service-item" style="background-image: url('img/wedding-service-event1.jpg');">
     <div class="overlay">
       <h3>Wedding Planning & Management</h3>
-      <p>Full-service wedding coordination, décor, and entertainment.</p>
+      <p>Comprehensive wedding coordination with bespoke décor, entertainment, and seamless execution from start to finish.</p>
     </div>
   </a>
-  <a href="service2.html" class="service-item" style="background-image: url('img/portfolio/l-thumb-02.jpg');">
+  <a href="#" class="service-item" style="background-image: url('img/decor-service.jpg');">
     <div class="overlay">
       <h3>Decor & Design Consultancy</h3>
-      <p>Themed setups for kids, adults, and milestone birthdays.</p>
+      <p>Creative event styling with personalized design consultancy for elegant, cohesive, and visually stunning experiences.</p>
     </div>
   </a>
-  <a href="service3.html" class="service-item" style="background-image: url('img/corparate\ service.jpg');">
+  <a href="#" class="service-item" style="background-image: url('img/corparate\ service.jpg');">
     <div class="overlay">
       <h3>Corporate Events & Experiences</h3>
-      <p>Professional setups for conferences and product launches.</p>
+      <p>Curated corporate gatherings, team experiences, product launches, and brand-focused event execution.</p>
     </div>
   </a>
-  <a href="service4.html" class="service-item" style="background-image: url('img/portfolio/l-thumb-04.jpg');">
+  <a href="#" class="service-item" style="background-image: url('img/hotel-services.jpg');">
     <div class="overlay">
-      <h3>Social & Private Events</h3>
-      <p>Elegant and stylish engagement event planning.</p>
+      <h3>Hotel Bookings & Accommodation Management</h3>
+      <p>We manage hotel bookings and guest accommodations, ensuring comfort and great rates—so you can enjoy the celebration stress-free.</p>
     </div>
   </a>
 </section>
-<section class="we-are-here-section">
-  <div class="we-are-here-content">
-    <h1>
-      WE ARE <br />
-      HERE FOR <br />
-      YOU <span>24/7</span>
-    </h1>
-    <p>
-      Have an event in mind? We’d love to hear from you! <br />
-      Click the Contact Us button below and Fill out the form below and our team will get in touch with you shortly.
-    </p>
-    <a href="#contact" class="contact-btn">Contact Us</a>
+
+<section class="we-are-here-section" id="contact">
+  <div class="we-are-here-wrapper">
+    <!-- Left Box -->
+    <div class="we-are-here-content">
+      <h1>
+        WE ARE <br />
+        HERE FOR <br />
+        YOU <span>24/7</span>
+      </h1>
+      <p>
+        Have an event in mind? We’d love to bring your vision to life! Whether it’s a wedding, party, or corporate event, our team is here to help.<br> Fill out the form with your details, and one of our expert planners will reach out to you shortly to begin crafting your perfect experience.
+      </p>
+      <div style="margin-bottom: 60px;"></div>
+      <a href="./contact-us.html" class="contact-btn">Contact Us</a>
+    </div>
+
+    <!-- Right Box (Form) -->
+    <div class="contact-form-box">
+      <h2 style="color: #1fe2ff;">Send Us a Message</h2>
+      <p>Have questions or want to start planning? Drop your details and we'll get back to you!</p>
+      <div style="margin-bottom: 20px;"></div>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="phone" placeholder="Contact Number" required />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="contact-btn">Send Message</button>
+      </form>
+    </div>
   </div>
-  </section>
+</section>
+
+
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-column">
@@ -170,20 +192,20 @@
       <div class="footer-column">
         <div class="footer-contact">
           <p><i class="fas fa-map-marker-alt"></i> 444 S. Cedros Ave<br>Solana Beach, California</p>
-          <p><i class="fas fa-phone-alt"></i> +1.555.555.5555</p>
-          <p><i class="fas fa-envelope"></i> <a href="mailto:support@company.com">support@company.com</a></p>
+          <p><i class="fas fa-phone-alt"></i> +91 7415347882</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:shubhangsingh147@gmail.com">shubhangsingh147@gmail.com</a></p>
         </div>
       </div>
   
       <div class="footer-column">
         <h4>About the company</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.</p>
+        <p>At Steller, we craft unforgettable events—seamless, stylish, and perfectly planned. From intimate moments to grand celebrations, our focus is on creating memories with perfection in every detail.</p>
         <br>
         <div class="footer-social">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/steller_event?igsh=bHZjNXNrOGxmc3Qz"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
     </div>
